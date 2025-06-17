@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61.0", "numpy", "pandas"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mlp"
+version = "0.1.0"
+description = "Пример MLP-проекта"
+authors = [{name = "brohome", email = "you@example.com"}]
+readme = ""
+requires-python = ">=3.8"
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[tool.setuptools]
+packages = ["mlp"]
