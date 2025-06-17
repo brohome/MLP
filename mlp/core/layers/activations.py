@@ -14,6 +14,11 @@ class ReLu(__Layer):
         return grad_input
 
 
+def SoftMax(x):
+    exp_x = np.exp(x - np.max(x, axis=1, keepdims=True))  # для стабильности
+    return exp_x / np.sum(exp_x, axis=1, keepdims=True)
+
+
 class Tanh(__Layer):
     def forward(self, x: np.ndarray):
         self.x = x
