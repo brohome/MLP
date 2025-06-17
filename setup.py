@@ -7,6 +7,7 @@ setup(
     install_requires=[
         'numpy',
         'pandas',
+        'pickle'
     ],
     author='steffan',
     description='Простая реализация MLP на numpy',
