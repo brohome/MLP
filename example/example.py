@@ -6,7 +6,7 @@ test = pd.read_csv('./example/data/test2.csv')
 x = train.drop(columns='7')
 y = train['7']
 
-data = m.DataLoader(x, y, batch_size=256)
+data = m.utils.DataLoader(x, y, batch_size=256)
 
 layers = [
     m.Dense(7, 64),

@@ -1,5 +1,5 @@
 import numpy as np
-from .layer import __Layer
+from ..layers.layer import __Layer
 """
 Здесь находятся функции активаций в виде классов которые наследуются от абстрактного класса Layer.
 У каждого их них есть forward и backward.
